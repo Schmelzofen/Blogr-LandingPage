@@ -32,3 +32,206 @@ Background gradient - body:
 - Family: [Ubuntu]
 - Weights: 400, 500, 700 
 */
+
+header {
+    background: url("../img/bg-pattern-intro-mobile.svg") center no-repeat, linear-gradient(to bottom, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    border-radius: 0 0 0 100px;
+    color: white;
+    font-family: Overpass;
+}
+
+.mobileHeader {
+    display: flex;
+    justify-content: space-between;
+    padding: 10% 5% 25% 5%;
+    align-items: center;
+}
+
+.mobileHeader h1 {
+    font-size: 5.3vh;
+}
+
+.mobileHeader img {
+    height: 20px;
+}
+
+.headerHero {
+    text-align: center;
+}
+
+header section h2 {
+    padding: 5% 12%;
+    font-size: 4.8vh;
+}
+
+header section h3 {
+    padding: 0 12% 15% 12%;
+    font-weight: lighter;
+}
+
+header section button {
+    padding: 3.5% 5%;
+    border-radius: 500px;
+    border: 1px solid white;
+    margin: 0 2%;
+    color: hsl(356, 100%, 66%);
+    font-weight: bolder;
+    background: hsl(0, 0%, 100%);
+}
+
+header section button:nth-of-type(2) {
+    color: white;
+    background: transparent;
+}
+
+header section:nth-of-type(3) {
+    text-align: center;
+    padding: 0 0 30% 0;
+}
+
+main section {
+    font-family: Overpass;
+}
+
+main section p:not(main section:nth-of-type(2) p) {
+    color: hsl(207, 13%, 34%);
+    line-height: 4.5vh;
+}
+
+main>section>h2:not(main section:nth-of-type(2) h2) {
+    text-align: center;
+    color: hsl(208, 49%, 24%);
+    font-size: 4vh;
+}
+
+main section:nth-of-type(1) {
+    position: relative;
+}
+
+main section:nth-of-type(1) img {
+    width: 100%;
+}
+
+main section:nth-of-type(1) h2:nth-of-type(1) {
+    padding: 25% 0 15% 0;
+}
+
+main section:nth-of-type(1) h2:nth-of-type(2) {
+    padding: 15% 20% 5% 20%;
+}
+
+main section:nth-of-type(1) h2:nth-of-type(3) {
+    padding: 10% 20% 5% 20%;
+}
+
+main section:nth-of-type(1) p:nth-of-type(1) {
+    padding: 0% 10%;
+    text-align: center;
+}
+
+main section:nth-of-type(1) p:nth-of-type(2) {
+    padding: 0% 10% 20% 10%;
+    text-align: center;
+    margin-bottom: -50%
+}
+
+main section:nth-of-type(2) {
+    background: url("../img/bg-pattern-circles.svg") top/cover no-repeat, linear-gradient(to bottom, hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+    border-radius: 0 100px 0 100px;
+    color: white;
+}
+
+main section:nth-of-type(2) h2 {
+    padding: 60% 15% 10% 15%;
+    line-height: 7vh;
+    text-align: center;
+    font-size: 5.5vh;
+}
+
+main section:nth-of-type(2) p {
+    text-align: center;
+    line-height: 4.5vh;
+    padding: 0 12% 30% 12%;
+}
+
+#phones {
+    position: relative;
+    width: 100%;
+    bottom: -210px;
+}
+
+main section:nth-of-type(3) {
+    text-align: center;
+}
+
+main section:nth-of-type(3) img {
+    width: 100%;
+    padding: 15% 0 10% 0;
+}
+
+
+main section:nth-of-type(3) h2:nth-of-type(1) {
+    padding: 0 0 8% 0;
+}
+
+main section:nth-of-type(3) p:nth-of-type(1) {
+    line-height: 4vh;
+    padding: 0 10% 12% 10%;
+}
+
+main section:nth-of-type(3) h2:nth-of-type(2) {
+    padding: 0 0 8% 0;
+}
+
+main section:nth-of-type(3) p:nth-of-type(2) {
+    line-height: 4vh;
+    padding: 0 10% 12% 10%;
+}
+
+footer {
+    background: rgb(15, 13, 23);
+    border-radius: 0 100px 0 0;
+    text-align: center;
+    color: white;
+    font-family: Overpass;
+    padding: 0 0 5% 0;
+}
+
+footer h2 {
+    padding: 20% 0;
+    font-size: 6vh
+}
+
+footer ul:nth-of-type(1) li:nth-of-type(1) {
+    padding: 0 0 5% 0;
+    color: hsl(0, 0%, 100%);
+}
+
+footer ul:nth-of-type(1) li {
+    line-height: 5vh;
+    color: hsl(240, 2%, 79%);
+}
+
+footer ul:nth-of-type(2) li:nth-of-type(1) {
+    padding: 10% 0 5% 0;
+    color: hsl(0, 0%, 100%);
+}
+
+footer ul:nth-of-type(2) li {
+    line-height: 5vh;
+    color: hsl(240, 2%, 79%);
+}
+
+footer ul:nth-of-type(3) li:nth-of-type(1) {
+    padding: 10% 0 5% 0;
+    color: hsl(0, 0%, 100%);
+}
+
+footer ul:nth-of-type(3) li {
+    line-height: 5vh;
+    color: hsl(240, 2%, 79%);
+}
+
+footer ul li {
+    font-size: 3vh;
+}

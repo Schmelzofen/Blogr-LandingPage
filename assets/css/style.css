@@ -40,6 +40,11 @@ header {
     font-family: Overpass;
 }
 
+a {
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+}
+
 .mobileHeader {
     display: flex;
     justify-content: space-between;
@@ -84,7 +89,7 @@ header section button:nth-of-type(2) {
     background: transparent;
 }
 
-header section:nth-of-type(3) {
+header section:nth-of-type(4) {
     text-align: center;
     padding: 0 0 30% 0;
 }
@@ -234,4 +239,85 @@ footer ul:nth-of-type(3) li {
 
 footer ul li {
     font-size: 3vh;
+}
+
+.desktopHeader {
+    display: none;
+}
+
+@media screen and (min-width: 1440px) {
+    .mobileHeader {
+        display: none;
+    }
+
+    header {
+        background: url("../img/bg-pattern-intro-desktop.svg") center no-repeat, linear-gradient(to bottom, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    }
+
+    .desktopHeader {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .desktopHeader nav ul {
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+    }
+
+    .desktopHeader nav {
+        padding: 3% 3% 0 2%;
+    }
+
+    .desktopHeader nav ul li {
+        cursor: pointer;
+    }
+
+    .desktopHeader nav:nth-of-type(2) {
+        padding: 3.5% 3% 0 2%;
+    }
+
+    .desktopHeader nav:nth-of-type(2) li {
+        margin-right: 75px;
+    }
+
+    .desktopHeader nav:nth-of-type(2) li:nth-of-type(2) {
+        height: 50px;
+        width: 125px;
+        background: white;
+        color: hsl(356, 100%, 66%);
+        border-radius: 100px;
+        padding: 5% 0 0 11%;
+        font-weight: bolder;
+    }
+
+    .desktopHeader nav:nth-of-type(1) li:nth-of-type(1) {
+        font-size: 7vh;
+        font-weight: bold;
+
+    }
+
+    .desktopHeader nav:nth-of-type(1) li {
+        margin-left: 55px;
+    }
+
+    .headerHero {
+        padding: 0;
+    }
+
+    .headerHero h2 {
+        font-size: 8vh;
+        font-weight: lighter;
+        padding: 10% 0 3% 0;
+    }
+
+    .headerHero h3 {
+        font-size: 3vh;
+        padding: 0 0 3% 0;
+    }
+
+    header section button {
+        padding: 1.5% 4%;
+        font-size: 2.5vh;
+    }
 }

@@ -66,13 +66,14 @@ a {
 }
 
 header section h2 {
-    padding: 5% 12%;
-    font-size: 4.8vh;
+    padding: 5% 8%;
+    font-size: 4vh;
 }
 
 header section h3 {
     padding: 0 12% 15% 12%;
-    font-weight: lighter;
+    font-weight: 300;
+    font-size: 2.5vh;
 }
 
 header section button {
@@ -119,11 +120,17 @@ main section:nth-of-type(1) img {
 }
 
 main section:nth-of-type(1) h2:nth-of-type(1) {
-    padding: 25% 0 15% 0;
+    padding: 25% 0% 15% 0%;
+    font-size: 3.5vh;
+    text-align: center;
+    color: hsl(208, 49%, 24%);
 }
 
 main section:nth-of-type(1) h2:nth-of-type(2) {
-    padding: 15% 20% 5% 20%;
+    padding: 15% 8% 5% 8%;
+    text-align: center;
+    font-size: 3.5vh;
+    color: hsl(208, 49%, 24%);
 }
 
 main section:nth-of-type(1) h2:nth-of-type(3) {
@@ -172,6 +179,7 @@ main section:nth-of-type(2) p {
 
 main section:nth-of-type(3) {
     text-align: center;
+    color: hsl(208, 49%, 24%);
 }
 
 main section:nth-of-type(3) img {
@@ -180,20 +188,20 @@ main section:nth-of-type(3) img {
 }
 
 
-main section:nth-of-type(3) h2:nth-of-type(1) {
+main section:nth-of-type(3) article h2:nth-of-type(1) {
     padding: 0 0 8% 0;
 }
 
-main section:nth-of-type(3) p:nth-of-type(1) {
+main section:nth-of-type(3) article p:nth-of-type(1) {
     line-height: 4vh;
     padding: 0 10% 12% 10%;
 }
 
-main section:nth-of-type(3) h2:nth-of-type(2) {
+main section:nth-of-type(3) article h2:nth-of-type(2) {
     padding: 0 0 8% 0;
 }
 
-main section:nth-of-type(3) p:nth-of-type(2) {
+main section:nth-of-type(3) article p:nth-of-type(2) {
     line-height: 4vh;
     padding: 0 10% 12% 10%;
 }
@@ -251,6 +259,10 @@ footer section ul li {
 }
 
 #editorDesktop {
+    display: none;
+}
+
+.desktopFooter {
     display: none;
 }
 
@@ -483,4 +495,5 @@ footer section ul li {
         font-size: 2.5vh;
         font-weight: bold;
     }
+
 }
